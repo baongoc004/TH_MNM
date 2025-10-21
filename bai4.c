@@ -17,12 +17,3 @@ float xepLoaiHocLuc(float dtb)
       printf("Gioi\n");
 }
 
-int main()
-{
-   float van, toan, anh;
-   printf("Nhap diem van, toan, anh: "); scanf("%f%f%f",&van, &toan, &anh);
-   float dtb = tinhDtb(van,toan,anh);
-   printf("Dien trung binh La: %.2f, Hoc luc: ",dtb);
-   xepLoaiHocLuc(dtb);
-   return 0;
-}
