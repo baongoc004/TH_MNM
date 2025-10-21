@@ -1,6 +1,8 @@
 #include <stdio.h>
 int tinhtiendien(int sodien) {
-    int tien = 0;
+    int tien = 0;   
+    printf("Nhap so dien: ");
+    scanf("%d", &sodien);
     if (sodien <= 100) {
         tien = sodien * 500;
     } else if (sodien <= 350) {
@@ -11,13 +13,4 @@ int tinhtiendien(int sodien) {
         tien = 100 * 500 + 250 * 550 + 300 * 650 + (sodien - 650) * 700;
     }
     return tien;
-}
-
-int main() {
-    int sodien;
-    printf("Nhap so dien: ");
-    scanf("%d", &sodien);
-    int gia = tinhtiendien(sodien);
-    printf("%d", gia);
-    return 0;
 }
