@@ -2,11 +2,13 @@
 
 float tinhDtb(float van, float toan, float anh)
 {
+   printf("Nhap diem van, toan, anh: "); scanf("%f%f%f",&van, &toan, &anh);
    return (van*2 + toan*2 +anh)/5;
 }
 float xepLoaiHocLuc(float dtb)
 {
-   
+   float dtb = tinhDtb(van,toan,anh);
+   printf("Dien trung binh La: %.2f, Hoc luc: ",dtb);
    if(dtb<3)
       printf("Yeu\n");
    else if(dtb<5)
@@ -17,12 +19,4 @@ float xepLoaiHocLuc(float dtb)
       printf("Gioi\n");
 }
 
-int main()
-{
-   float van, toan, anh;
-   printf("Nhap diem van, toan, anh: "); scanf("%f%f%f",&van, &toan, &anh);
-   float dtb = tinhDtb(van,toan,anh);
-   printf("Dien trung binh La: %.2f, Hoc luc: ",dtb);
-   xepLoaiHocLuc(dtb);
-   return 0;
-}
+
