@@ -3,6 +3,7 @@
 
 void giaiPhuongTrinhBac2(float a, float b, float c)
 {
+   rintf("Nhap a, b, c: "); scanf("%f%f%f",&a, &b, &c);
    if(a == 0)
    {
       if(b==0)
@@ -29,10 +30,4 @@ void giaiPhuongTrinhBac2(float a, float b, float c)
       }
    }
 }
-int main()
-{
-   float a,b,c;
-   printf("Nhap a, b, c: "); scanf("%f%f%f",&a, &b, &c);
-   giaiPhuongTrinhBac2(a,b,c);
-   return 0;
-}
+
