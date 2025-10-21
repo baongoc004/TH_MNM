@@ -7,6 +7,7 @@ float tinhDtb(float van, float toan, float anh)
 }
 float xepLoaiHocLuc(float dtb)
 {
+   float van, toan, anh;
    float dtb = tinhDtb(van,toan,anh);
    printf("Dien trung binh La: %.2f, Hoc luc: ",dtb);
    if(dtb<3)
