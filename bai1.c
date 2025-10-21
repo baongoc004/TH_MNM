@@ -11,10 +11,4 @@ void so_ngay(int thang) {
         printf("Thang khong hop le\n");
 }
 
-int main() {
-    int thang;
-    printf("Nhap thang: ");
-    scanf("%d", &thang);
-    so_ngay(thang);
-}
 
