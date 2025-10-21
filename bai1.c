@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 void so_ngay(int thang) {
+    printf("Nhap thang: "); scanf("%d",&thang)
     if (thang == 2)
         printf("28 hoac 29 ngay\n");
     else if (thang==4 || thang==6 || thang==9 || thang==11)
